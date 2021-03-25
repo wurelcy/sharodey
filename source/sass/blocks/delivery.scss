@@ -1,0 +1,153 @@
+.delivery {
+  padding-top: 50px;
+}
+
+.delivery .container {
+  position: relative;
+  width: 70%;
+}
+
+.delivery__wrapper {
+  position: absolute;
+  z-index: 10;
+  background-color: $white;
+  top: 214px;
+  padding: 50px;
+  padding-right: 20px;
+  border: 3px solid rgba($grey, 0.2);
+  box-shadow: 0 0 10px 5px rgba($black, 0.1);
+}
+
+.delivery__main {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  max-width: 670px;
+}
+
+.delivery__list {
+  max-width: 700px;
+}
+
+.delivery__item {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.delivery__title {
+  margin: 0;
+  margin-bottom: 51px;
+  padding-top: 20px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.delivery__pickup {
+  margin-top: 60px;
+  font-size: 28px;
+  line-height: 36px;
+  max-width: 420px;
+}
+
+.delivery iframe {
+  width: 100%;
+  height: 800px;
+  border: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .delivery {
+    padding-top: 20px;
+  }
+
+  .delivery .container {
+    width: 90%;
+  }
+
+  .delivery__wrapper {
+    top: 154px;
+    padding: 20px;
+    padding-right: 20px;
+  }
+
+  .delivery__main {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .delivery__list {
+    max-width: 420px;
+  }
+
+  .delivery__item {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .delivery__title {
+    margin-bottom: 40px;
+    padding-top: 0;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .delivery__pickup {
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 360px;
+  }
+
+  .delivery iframe {
+    height: 600px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .delivery {
+    padding-top: 10px;
+  }
+
+  .delivery__wrapper {
+    position: relative;
+    top: 0;
+    padding: 20px;
+    padding-right: 20px;
+    box-shadow: none;
+    margin-bottom: 30px;
+  }
+
+  .delivery__main {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .delivery__list {
+    max-width: 280px;
+  }
+
+  .delivery__item {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .delivery__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .delivery__pickup {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

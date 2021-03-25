@@ -1,0 +1,180 @@
+.header {
+  min-height: 80vh;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-color: $pink;
+  background-image: url("../img/baloons-gold@1x.png");
+  background-repeat: no-repeat;
+  background-position: 75% 100%;
+}
+
+.header__logo {
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.header__contact {
+  display: flex;
+  align-items: center;
+
+  svg {
+    fill: $brown;
+    margin-right: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $black;
+    transition: color 0.4s ease-in-out;
+
+     svg {
+      fill: $black;
+      transition: fill 0.4s ease-in-out;
+    }
+  }
+
+  &:active {
+    color: rgba($black, 0.2);
+    transition: color 0.1s ease-in-out;
+
+    svg {
+      fill: rgba($black, 0.2);
+      transition: fill 0.1s ease-in-out;
+    }
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 300px;
+}
+
+.header__slogan {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 130px;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 59px;
+  text-transform: uppercase;
+  max-width: 640px;
+}
+
+.header__link {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 300;
+  text-transform: lowercase;
+  max-width: 710px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    fill: $brown;
+    margin-right: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $rose;
+    transition: color 0.5s ease-in-out;
+
+     svg {
+      fill: $rose;
+      transition: fill 0.5s ease-in-out;
+    }
+  }
+
+  &:active {
+    color: rgba($black, 0.2);
+    transition: color 0.1s ease-in-out;
+
+    svg {
+      fill: rgba($black, 0.2);
+      transition: fill 0.1s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    min-height: 60vh;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    background-image: none;
+
+    .container {
+      width: 90%;
+    }
+  }
+
+  .header__logo {
+    font-size: 36px;
+    line-height: 48px;
+    margin-right: auto;
+  }
+
+  .header__contact {
+    span {
+      display: none;
+    }
+
+    svg {
+      width: 32px;
+      height: 32px;
+      margin-right: 0;
+    }
+  }
+
+  .header__wrapper {
+    margin-bottom: 120px;
+  }
+
+  .header__slogan {
+    margin-bottom: 70px;
+    font-size: 36px;
+    line-height: 48px;
+    max-width: 320px;
+  }
+
+  .header__link {
+    font-size: 36px;
+    line-height: 40px;
+    max-width: 410px;
+
+    svg {
+      margin-right: 15px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .header {
+    min-height: auto;
+    background-size: 300px;
+    background-position: 250% 50%;
+  }
+
+  .header__logo {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .header__wrapper {
+    margin-bottom: 150px;
+  }
+
+  .header__slogan {
+    margin-bottom: 100px;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 280px;
+  }
+
+  .header__link {
+    font-size: 28px;
+    line-height: 32px;
+    max-width: 280px;
+  }
+}
