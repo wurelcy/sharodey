@@ -843,7 +843,8 @@ ul {
     right: -30px; }
   .slick-slider {
     width: 620px;
-    height: 470px; }
+    height: 470px;
+    margin: 0; }
   .slick-slide {
     height: 430px; }
   .slick-dots {
@@ -885,8 +886,12 @@ ul {
     height: 260px; }
   .slick-slide {
     height: 220px; }
+    .slick-slide .lazy {
+      height: 220px; }
   .slick-dots {
     max-width: 250px; }
+  .categories__slider .slick-arrow {
+    display: none; }
   .categories__slider-title {
     font-size: 20px;
     line-height: 24px; }
