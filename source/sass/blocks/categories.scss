@@ -53,11 +53,17 @@
       order: 1;
     }
   }
+
+  .lazy {
+    object-fit: contain;
+    margin: auto;
+  }
 }
 
 .slick-slider {
   width: 920px;
   height: 630px;
+  margin: 0 40px;
 }
 
 .slick-slide {
@@ -65,6 +71,41 @@
   object-fit: contain;
   outline: none;
   margin: auto;
+  position: relative;
+}
+
+.categories__slider .slick-arrow {
+  background: none;
+  border: none;
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  outline: none;
+  transform: translate(-50%, -50%);
+
+  svg {
+    height: 54px;
+    fill: $brown;
+  }
+
+  &:hover {
+    svg {
+      fill: $grey;
+      transition: fill 0.5s;
+    }
+  }
+}
+
+.categories__slider .slick-prev {
+  left: -30px;
+}
+
+.categories__slider .slick-next {
+  right: -60px;
+  top: 45%;
+  transform: rotate(180deg);
 }
 
 .slick-dots {
@@ -105,7 +146,7 @@
 }
 
 .mixed-slider .slick-slider {
-  width: 1000px;
+  width: 900px;
 }
 
 .mixed-slider .slick-slide {
@@ -113,6 +154,20 @@
   margin-right: 20px;
 }
 
+@media (max-width: 1550px) {
+  .categories__slider .slick-slider {
+    width: 700px;
+
+    .lazy {
+      margin-top: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .mixed-slider .slick-slide {
+    height: 470px;
+  }
+}
 
 @media (max-width: $tablet-width) {
   .categories {
@@ -165,7 +220,26 @@
 
     &:last-child .slick-slider {
       height: 430px;
+      width: 680px;
     }
+  }
+
+  .categories__slider .slick-arrow {
+    width: 32px;
+    height: 32px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .categories__slider .slick-prev {
+    left: -10px;
+  }
+
+  .categories__slider .slick-next {
+    right: -30px;
   }
 
   .slick-slider {
@@ -211,6 +285,14 @@
     line-height: 24px;
     margin: 0;
     margin-bottom: 20px;
+
+    img {
+      object-fit: contain;
+    }
+
+    &:nth-child(2n) {
+      margin-top: 70px;
+    }
   }
 
   .categories__slider {
@@ -220,6 +302,10 @@
       width: 280px;
       height: 340px;
     }
+  }
+
+  .categories__slider .slick-slider {
+    width: 320px;
   }
 
   .slick-slider {

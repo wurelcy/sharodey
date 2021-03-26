@@ -60,9 +60,9 @@ $(document).ready(function(){
     arrow.innerHTML = '<svg width="54"><use xlink:href="#icon-arrow-left"></use></svg>'
   });
 
-  arrows.forEach((arrow) => {
+  /*arrows.forEach((arrow) => {
     arrow.style.display = 'none';
-  });
+  });*/
 
   arrowsReviews.forEach((arrow) => {
     arrow.style.display = 'none';

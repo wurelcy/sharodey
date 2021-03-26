@@ -137,6 +137,7 @@
 
   .price__photozone {
     flex-grow: 1;
+    order: 1;
     flex-basis: 100%;
   }
 
@@ -204,7 +205,6 @@
   }
 
   .price__title {
-    margin-bottom: 0;
     font-size: 24px;
     line-height: 28px;
   }
