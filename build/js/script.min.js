@@ -3,11 +3,9 @@ $(document).ready(function(){
     $('.lazy').Lazy();
   });
 
-  const categoriesBlock = document.querySelector('.categories');
   const anchors = document.querySelectorAll('a[href*="#"]');
   let dots = document.querySelectorAll('.slick-dots button');
   let dotsList = document.querySelectorAll('.slick-dots');
-  let arrows = categoriesBlock.querySelectorAll('.slick-arrow');
   let arrowsReviews = document.querySelectorAll('.reviews .slick-arrow');
   let arrowsBtn = document.querySelectorAll('.slick-arrow');
   const videoSlider = document.querySelector('.order__slider');
@@ -59,10 +57,6 @@ $(document).ready(function(){
     arrow.textContent = '';
     arrow.innerHTML = '<svg width="54"><use xlink:href="#icon-arrow-left"></use></svg>'
   });
-
-  /*arrows.forEach((arrow) => {
-    arrow.style.display = 'none';
-  });*/
 
   arrowsReviews.forEach((arrow) => {
     arrow.style.display = 'none';
