@@ -1318,23 +1318,24 @@ ul {
   z-index: 10;
   background-color: #ffffff;
   top: 214px;
-  padding: 50px;
+  padding: 30px;
   padding-right: 20px;
   border: 3px solid rgba(196, 196, 196, 0.2);
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1); }
 
 .delivery__main {
+  margin-top: 0;
   font-weight: 500;
   font-size: 28px;
-  line-height: 36px;
-  max-width: 670px; }
+  line-height: 32px;
+  max-width: 620px; }
 
 .delivery__list {
-  max-width: 700px; }
+  max-width: 620px; }
 
 .delivery__item {
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 32px;
   margin-bottom: 20px; }
 
 .delivery__title {
@@ -1348,9 +1349,10 @@ ul {
   text-transform: uppercase; }
 
 .delivery__pickup {
+  margin: 0;
   margin-top: 60px;
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 32px;
   max-width: 420px; }
 
 .delivery iframe {

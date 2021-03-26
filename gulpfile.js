@@ -64,7 +64,7 @@ const copy = () => {
     "source/libs/**/*.*",
     "source/vids/**/*.mp4",
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**/*.{png,jpg,svg}"
+    "source/img/**/*.{png,jpg,svg,ico}"
   ], {
     base: "source"
   })
