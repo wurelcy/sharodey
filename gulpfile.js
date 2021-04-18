@@ -63,6 +63,7 @@ const copy = () => {
   return gulp.src([
     "source/libs/**/*.*",
     "source/vids/**/*.mp4",
+    "source/files/**/*.*",
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**/*.{png,jpg,svg,ico}"
   ], {

@@ -20,6 +20,15 @@
   max-width: 355px;
 }
 
+.price__photozone a {
+  text-decoration: underline;
+
+  &:hover {
+    color: $pink;
+    transition: all 0.4s ease-out;
+  }
+}
+
 .price__wrapper {
   display: flex;
   justify-content: space-between;
